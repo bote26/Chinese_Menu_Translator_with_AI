@@ -1,0 +1,12 @@
+# Core runtime. Verified against Python 3.10.4.
+# The vision extractor (default) needs nothing else.
+streamlit>=1.65
+pandas>=2.2
+pydantic>=2.9
+pillow>=10.4
+requests>=2.32
+numpy>=1.26
+
+# Optional: only for the OCR extractor (MENU_EXTRACTOR=ocr) and three of the
+# tests. Heavy - it pulls PyTorch (~2 GB installed).
+# easyocr>=1.7
