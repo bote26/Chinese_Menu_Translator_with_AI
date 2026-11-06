@@ -1,0 +1,17 @@
+# Secrets - never commit
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local outputs from the CLI
+out/
+
+# Taste profile and tap history - user data, like out/
+data/
+
+# WorkBuddy workspace notes - local working logs, not project source
+.workbuddy/

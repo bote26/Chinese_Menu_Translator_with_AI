@@ -1,0 +1,82 @@
+# Warm editorial theme: cream paper, brick-red accent, serif headings.
+#
+# Shared typography lives in [theme]; colours are repeated per variant so
+# neither mode depends on inheritance order. Fonts are built-ins on purpose -
+# no Google Fonts link, because a stylesheet that is blocked or slow renders as
+# a mid-load font swap, and this app is used from mainland China.
+
+[theme]
+font = "sans-serif"
+headingFont = "serif"
+codeFont = "monospace"
+baseFontSize = 15
+codeFontSize = "0.82rem"
+headingFontSizes = ["2.1rem", "1.5rem", "1.2rem", "1.05rem", "0.95rem", "0.85rem"]
+headingFontWeights = [700, 600, 600, 600, 600, 600]
+linkUnderline = false
+baseRadius = "6px"
+buttonRadius = "4px"
+
+# Muted, warm categorical palette; the first colour is the brick accent.
+chartCategoricalColors = [
+  "#A6402D", "#C99A3F", "#5D7A4A", "#8C5A6B", "#4A6E75", "#C4703A", "#8A7C6D",
+]
+# Exactly 10 colours, as Streamlit requires.
+chartSequentialColors = [
+  "#FBF3E6", "#F4E3CC", "#EDD3B1", "#E4C096", "#D9A97C",
+  "#CB8F65", "#B97550", "#A25B3E", "#8A4430", "#6E3423",
+]
+
+[theme.light]
+primaryColor = "#A6402D"            # 6.19:1 against white button text
+backgroundColor = "#FDFBF7"         # paper
+secondaryBackgroundColor = "#F4EFE6"
+textColor = "#2B2420"
+linkColor = "#8C3524"
+codeBackgroundColor = "#F1E9DC"
+codeTextColor = "#4A3B33"
+borderColor = "#E2D7C6"
+dataframeBorderColor = "#E4DACA"
+dataframeHeaderBackgroundColor = "#F1E7D8"
+dataframeHeaderTextColor = "#3A2C24"
+redColor = "#A6402D"
+orangeColor = "#C4703A"
+yellowColor = "#C99A3F"
+greenColor = "#5D7A4A"
+blueColor = "#4A6E75"
+violetColor = "#8C5A6B"
+grayColor = "#8A7C6D"
+
+[theme.light.sidebar]
+backgroundColor = "#F8F2E6"
+secondaryBackgroundColor = "#EFE6D6"
+textColor = "#2B2420"
+borderColor = "#E1D4BF"
+primaryColor = "#A6402D"
+
+[theme.dark]
+primaryColor = "#C0512F"            # 4.71:1 against white button text
+backgroundColor = "#1A1613"         # warm charcoal, not blue-black
+secondaryBackgroundColor = "#241E19"
+textColor = "#EFE6D8"
+linkColor = "#E39A7E"               # 7.87:1 on the dark background
+codeBackgroundColor = "#2A2320"
+codeTextColor = "#E4D8C6"
+borderColor = "#3A2F26"
+dataframeBorderColor = "#3A2F26"
+dataframeHeaderBackgroundColor = "#2A2320"
+dataframeHeaderTextColor = "#EFE6D8"
+redColor = "#D46A50"
+orangeColor = "#E08A4A"
+yellowColor = "#D9A94A"
+greenColor = "#7FA463"
+blueColor = "#6E97A0"
+violetColor = "#B27E90"
+grayColor = "#9A8B7A"
+
+[theme.dark.sidebar]
+backgroundColor = "#15110E"
+secondaryBackgroundColor = "#221C17"
+textColor = "#EFE6D8"
+borderColor = "#332A22"
+primaryColor = "#C0512F"
